@@ -17,7 +17,7 @@ pipeline {
 
         stage('Prune Docker data') {
             steps {
-                sh 'docker system prune -a --volume -f'
+                sh 'docker system prune -a --volumes -f'
             }
         }
         stage('start container'){
